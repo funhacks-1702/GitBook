@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 /// GitHubのユーザアカウント用モデルクラス
-class GitHubUser: Mappable {
+class GitHubUserModel: Mappable {
     var avatar_url: String?
     var login : String?
     var name : String?
