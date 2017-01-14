@@ -7,7 +7,7 @@ target 'GitBook' do
   use_frameworks!
 
   # Pods for GitBook
-  pod 'Kanna'
+  pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna'
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
   pod 'ObjectMapper', :git => 'https://github.com/Hearst-DD/ObjectMapper'
 
