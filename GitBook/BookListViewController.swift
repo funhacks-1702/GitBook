@@ -8,16 +8,17 @@
 
 import UIKit
 import Kanna
+import SDWebImage
 
 class BookListViewController: UIViewController{
     
-    var searchName = "Ruby"
     var books: [BookModel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        getBookInfoFromHTML()
+        
+        getBookInfoFromHTML(searchName: "Ruby")
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,7 +26,9 @@ class BookListViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
-    func getBookInfoFromHTML () {
+    
+    
+    func getBookInfoFromHTML (searchName: String) {
         let url: URL = URL(string: "https://www.amazon.co.jp/s/ref=nb_sb_noss_2?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Dstripbooks&field-keywords=\(searchName)")!
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url), completionHandler: { (data, response, error) in
