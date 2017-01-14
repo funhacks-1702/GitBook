@@ -10,6 +10,7 @@ target 'GitBook' do
   pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna'
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
   pod 'ObjectMapper', :git => 'https://github.com/Hearst-DD/ObjectMapper'
+  pod 'SDWebImage’, :git => ‘https://github.com/rs/SDWebImage’
   pod 'RealmSwift', :git => 'https://github.com/realm/realm-cocoa', submodules: true
 
 end
