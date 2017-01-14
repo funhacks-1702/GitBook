@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		74271B961E2A2233004E4874 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74271B951E2A2233004E4874 /* libxml2.tbd */; };
 		74271B9B1E2A5085004E4874 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9A1E2A5085004E4874 /* BookModel.swift */; };
+		74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */; };
 		BB80C8E011510492E00B2C68 /* Pods_GitBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA7F33FBCF2A2423C68469F /* Pods_GitBook.framework */; };
 		D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1841E29CAC700396BFB /* AppDelegate.swift */; };
 		D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1861E29CAC700396BFB /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		74271B951E2A2233004E4874 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		74271B9A1E2A5085004E4874 /* BookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfModel.swift; sourceTree = "<group>"; };
 		A3E59A4A57A37EC4EB34E5FC /* Pods-GitBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitBook/Pods-GitBook.release.xcconfig"; sourceTree = "<group>"; };
 		D6EFB1811E29CAC700396BFB /* GitBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EFB1841E29CAC700396BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				D6EFB1901E29CAC700396BFB /* Info.plist */,
 				74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */,
 				74271B9A1E2A5085004E4874 /* BookModel.swift */,
+				74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */,
 			);
 			path = GitBook;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				74271B9B1E2A5085004E4874 /* BookModel.swift in Sources */,
 				F7D80FCC1E2A29B500AE11D8 /* MyGitHubLogin.swift in Sources */,
+				74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */,
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				F7D80FCB1E2A29B500AE11D8 /* GitHubUser.swift in Sources */,
 				F7D80FCA1E2A29B500AE11D8 /* GitHubRepo.swift in Sources */,
