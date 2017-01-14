@@ -14,6 +14,7 @@ class BookShelfModel: Mappable{
     var shelf_name: String?
     var shelf_owner: String?
     var created_at: NSDate?
+    var is_private: Bool?
     var shelf_books: [BookModel]?
     
     required init?(map: Map){
@@ -24,6 +25,7 @@ class BookShelfModel: Mappable{
         shelf_name <- map["shelf_name"]
         shelf_owner <- map["shelf_owner"]
         created_at <- map["created_at"]
+        is_private <- map["is_private"]
         shelf_books <- map["shelf_books"]
     }
 }

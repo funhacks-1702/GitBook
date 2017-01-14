@@ -13,5 +13,6 @@ class BookShelf: Object{
     var shelf_name = ""
     var shelf_owner = ""
     var created_at = NSDate()
+    var is_private = false
     var shelf_books : [BookModel]?
 }
