@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import ObjectMapper
+import RealmSwift
 // 本用のモデルクラス
-class BookModel: Mappable{
+class BookModel: Object{
     var book_id: Int?
     var book_url: String?
     var book_name: String?
@@ -17,17 +17,5 @@ class BookModel: Mappable{
     var author: String?
     var comment: String?
     var tag: [String]?
-    
-    required init?(map: Map){
-    }
-    
-    func mapping(map: Map){
-        book_id <- map["book_id"]
-        book_url <- map["book_url"]
-        book_name <- map["book_name"]
-        book_image_url <- map["book_image_url"]
-        author <- map["author"]
-        comment <- map["comment"]
-        tag <- map["tag"]
-    }
+
 }
