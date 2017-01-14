@@ -349,6 +349,7 @@
 		};
 		D6EFB1941E29CAC700396BFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5617A0B202016AE722C6E441 /* Pods-GitBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GitBook/Info.plist;

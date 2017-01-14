@@ -25,7 +25,6 @@ class MyGitHubLogin {
     func confirmAccessToken(){
         let userDefault = UserDefaults.standard
         self.accessToken = userDefault.object(forKey: "access_token") as! String!
-        print(self.accessToken)
         //AccessTokenが存在しない時
         guard let accessToken = self.accessToken else{
             let clientId = self.clientId
