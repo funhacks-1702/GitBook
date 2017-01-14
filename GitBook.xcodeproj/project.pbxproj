@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */; };
+		D65A9DCB1E2A1B2E00B4E35F /* BarcodeReaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */; };
 		D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1841E29CAC700396BFB /* AppDelegate.swift */; };
 		D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1861E29CAC700396BFB /* ViewController.swift */; };
 		D6EFB18A1E29CAC700396BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EFB1881E29CAC700396BFB /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReaderView.swift; sourceTree = "<group>"; };
+		D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarcodeReaderView.xib; sourceTree = "<group>"; };
 		D6EFB1811E29CAC700396BFB /* GitBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EFB1841E29CAC700396BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EFB1861E29CAC700396BFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				D6EFB1841E29CAC700396BFB /* AppDelegate.swift */,
 				D6EFB1861E29CAC700396BFB /* ViewController.swift */,
 				D6EFB1881E29CAC700396BFB /* Main.storyboard */,
+				D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */,
+				D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */,
 				D6EFB18B1E29CAC700396BFB /* Assets.xcassets */,
 				D6EFB18D1E29CAC700396BFB /* LaunchScreen.storyboard */,
 				D6EFB1901E29CAC700396BFB /* Info.plist */,
@@ -123,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65A9DCB1E2A1B2E00B4E35F /* BarcodeReaderView.xib in Resources */,
 				D6EFB18F1E29CAC700396BFB /* LaunchScreen.storyboard in Resources */,
 				D6EFB18C1E29CAC700396BFB /* Assets.xcassets in Resources */,
 				D6EFB18A1E29CAC700396BFB /* Main.storyboard in Resources */,
@@ -136,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */,
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +305,7 @@
 				D6EFB1951E29CAC700396BFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
