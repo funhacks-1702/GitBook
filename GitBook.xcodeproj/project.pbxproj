@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74271B961E2A2233004E4874 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74271B951E2A2233004E4874 /* libxml2.tbd */; };
+		74271B991E2A25C1004E4874 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B981E2A25C1004E4874 /* BookListViewController.swift */; };
 		BB80C8E011510492E00B2C68 /* Pods_GitBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA7F33FBCF2A2423C68469F /* Pods_GitBook.framework */; };
 		D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1841E29CAC700396BFB /* AppDelegate.swift */; };
 		D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1861E29CAC700396BFB /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 		5617A0B202016AE722C6E441 /* Pods-GitBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitBook/Pods-GitBook.debug.xcconfig"; sourceTree = "<group>"; };
 		74271B951E2A2233004E4874 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		74271B981E2A25C1004E4874 /* BookListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		A3E59A4A57A37EC4EB34E5FC /* Pods-GitBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitBook/Pods-GitBook.release.xcconfig"; sourceTree = "<group>"; };
 		D6EFB1811E29CAC700396BFB /* GitBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EFB1841E29CAC700396BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				D6EFB18D1E29CAC700396BFB /* LaunchScreen.storyboard */,
 				D6EFB1901E29CAC700396BFB /* Info.plist */,
 				74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */,
+				74271B981E2A25C1004E4874 /* BookListViewController.swift */,
 			);
 			path = GitBook;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */,
+				74271B991E2A25C1004E4874 /* BookListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
