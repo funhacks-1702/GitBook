@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //アクセストークン確認(トークンがなければ取得)
-        MyGitHubLogin.sharedInstance.confirmAccessToken()
+        GitHubConnection.sharedInstance.confirmAccessToken()
 
         return true
     }
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let code = kv?[1]
                 
                 // サインイン
-                MyGitHubLogin.sharedInstance.getAccessToken(code: code)
+                GitHubConnection.sharedInstance.getAccessToken(code: code)
                 
                 return true
             }

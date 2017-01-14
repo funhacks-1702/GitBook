@@ -10,14 +10,14 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-class MyGitHubLogin {
+class GitHubConnection {
     var code: String!
     let clientId = "4afadd9b0d399d181f05"
     let clientSecret = "b1ea6a00f2bb9e4f3a0ff38d0a3aa476efa992ee"
     var accessToken: String!
     var user: GitHubUserModel!
     
-    static let sharedInstance = MyGitHubLogin()
+    static let sharedInstance = GitHubConnection()
     init() {
         
     }
@@ -113,5 +113,29 @@ class MyGitHubLogin {
         }
         
     }
-    
+    //リポジトリ作成
+    func createNewProj(name:String)
+    {
+        guard let accessToken = self.accessToken else{
+            return
+        }
+        
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        let params: Parameters = [
+            "name" : name,
+            "access_token" : accessToken
+        ]
+        
+        Alamofire.request("https://api.github.com/user/repos",method: .post, parameters: params, headers: headers).responseJSON { response in
+            if let json:[Any] = response.result.value as?[Any] {
+                for repo in json {
+                    let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: repo)
+                }
+            }
+        }
+
+    }
 }
