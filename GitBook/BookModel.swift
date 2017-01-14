@@ -10,18 +10,18 @@ import Foundation
 import ObjectMapper
 // 本用のモデルクラス
 class BookModel: Mappable{
-    var bookURL: String?
-    var bookName: String?
-    var bookImageURL: String?
+    var book_url: String?
+    var book_name: String?
+    var book_image_url: String?
     var author: String?
     
     required init?(map: Map){
     }
     
     func mapping(map: Map){
-        bookURL <- map["bookURL"]
-        bookName <- map["bookName"]
-        bookImageURL <- map["bookImageURL"]
+        book_url <- map["book_url"]
+        book_name <- map["book_name"]
+        book_image_url <- map["book_image_url"]
         author <- map["author"]
     }
 }
