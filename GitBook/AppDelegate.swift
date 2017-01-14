@@ -16,6 +16,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //アクセストークン確認(トークンがなければ取得)
+        MyGitHubLogin.sharedInstance.confirmAccessToken()
+
+        return true
+    }
+    
+    /// URLスキーマのcallback受け取り
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+        // gitbook://oauth/github?code=hogehoge のようなURLで戻ってくる
+        if url.scheme == "gitbook" {
+            if url.host == "oauth" && url.lastPathComponent == "github" {
+                let kv = url.query?.components(separatedBy: "=")
+                if kv?[0] != "code" {
+                    return false
+                }
+                
+                let code = kv?[1]
+                
+                // サインイン
+                MyGitHubLogin.sharedInstance.getAccessToken(code: code)
+                
+                return true
+            }
+            return false
+        }
+        
         return true
     }
 
