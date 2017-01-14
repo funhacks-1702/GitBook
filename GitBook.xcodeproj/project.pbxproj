@@ -10,6 +10,7 @@
 		74271B961E2A2233004E4874 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74271B951E2A2233004E4874 /* libxml2.tbd */; };
 		74271B9B1E2A5085004E4874 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9A1E2A5085004E4874 /* BookModel.swift */; };
 		74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */; };
+		74271B9F1E2A6C39004E4874 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9E1E2A6C39004E4874 /* BookListViewController.swift */; };
 		BB80C8E011510492E00B2C68 /* Pods_GitBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA7F33FBCF2A2423C68469F /* Pods_GitBook.framework */; };
 		D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */; };
 		D65A9DCB1E2A1B2E00B4E35F /* BarcodeReaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */; };
@@ -29,6 +30,7 @@
 		74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		74271B9A1E2A5085004E4874 /* BookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfModel.swift; sourceTree = "<group>"; };
+		74271B9E1E2A6C39004E4874 /* BookListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		A3E59A4A57A37EC4EB34E5FC /* Pods-GitBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitBook/Pods-GitBook.release.xcconfig"; sourceTree = "<group>"; };
 		D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReaderView.swift; sourceTree = "<group>"; };
 		D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarcodeReaderView.xib; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				F7D80FC71E2A29B500AE11D8 /* GitHubRepo.swift */,
 				F7D80FC81E2A29B500AE11D8 /* GitHubUser.swift */,
 				F7D80FC91E2A29B500AE11D8 /* MyGitHubLogin.swift */,
+				74271B9E1E2A6C39004E4874 /* BookListViewController.swift */,
 				D6EFB1881E29CAC700396BFB /* Main.storyboard */,
 				D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */,
 				D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */,
@@ -245,6 +248,7 @@
 				D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */,
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				F7D80FCB1E2A29B500AE11D8 /* GitHubUser.swift in Sources */,
+				74271B9F1E2A6C39004E4874 /* BookListViewController.swift in Sources */,
 				F7D80FCA1E2A29B500AE11D8 /* GitHubRepo.swift in Sources */,
 				D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */,
 			);
