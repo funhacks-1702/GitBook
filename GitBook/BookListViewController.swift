@@ -19,6 +19,8 @@ class BookListViewController: UIViewController{
         // Do any additional setup after loading the view, typically from a nib.
         
         getBookInfoFromHTML(searchName: "Ruby")
+        let nib = UINib(nibName: "BookListTableViewCell", bundle: nil)
+//        てーぶるびゅー.register(nib, forCellReuseIdentifier: "BookCell")
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,8 +40,7 @@ class BookListViewController: UIViewController{
             } else {
                 
                 let doc = HTML(html: data!, encoding: .utf8)
-                print(doc?.title)
-                
+
                 for contentsList in doc!.css("div.s-item-container"){
                     var book_name:String? = ""
                     var book_url:String? = ""
