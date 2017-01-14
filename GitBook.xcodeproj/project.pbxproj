@@ -13,6 +13,7 @@
 		BB80C8E011510492E00B2C68 /* Pods_GitBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA7F33FBCF2A2423C68469F /* Pods_GitBook.framework */; };
 		D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */; };
 		D65A9DCB1E2A1B2E00B4E35F /* BarcodeReaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */; };
+		D6D5B0201E2A6BB400CB484B /* BookShelfStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5B01F1E2A6BB400CB484B /* BookShelfStorage.swift */; };
 		D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1841E29CAC700396BFB /* AppDelegate.swift */; };
 		D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1861E29CAC700396BFB /* ViewController.swift */; };
 		D6EFB18A1E29CAC700396BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EFB1881E29CAC700396BFB /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		A3E59A4A57A37EC4EB34E5FC /* Pods-GitBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitBook/Pods-GitBook.release.xcconfig"; sourceTree = "<group>"; };
 		D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReaderView.swift; sourceTree = "<group>"; };
 		D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarcodeReaderView.xib; sourceTree = "<group>"; };
+		D6D5B01F1E2A6BB400CB484B /* BookShelfStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfStorage.swift; sourceTree = "<group>"; };
 		D6EFB1811E29CAC700396BFB /* GitBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EFB1841E29CAC700396BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EFB1861E29CAC700396BFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */,
 				74271B9A1E2A5085004E4874 /* BookModel.swift */,
 				74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */,
+				D6D5B01F1E2A6BB400CB484B /* BookShelfStorage.swift */,
 			);
 			path = GitBook;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */,
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				F7D80FCB1E2A29B500AE11D8 /* GitHubUser.swift in Sources */,
+				D6D5B0201E2A6BB400CB484B /* BookShelfStorage.swift in Sources */,
 				F7D80FCA1E2A29B500AE11D8 /* GitHubRepo.swift in Sources */,
 				D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */,
 			);
