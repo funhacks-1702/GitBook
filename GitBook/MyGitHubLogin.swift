@@ -15,7 +15,7 @@ class MyGitHubLogin {
     let clientId = "4afadd9b0d399d181f05"
     let clientSecret = "b1ea6a00f2bb9e4f3a0ff38d0a3aa476efa992ee"
     var accessToken: String!
-    var user: GitHubUser!
+    var user: GitHubUserModel!
     
     static let sharedInstance = MyGitHubLogin()
     init() {
@@ -53,7 +53,7 @@ class MyGitHubLogin {
              */
             if let json = response.result.value {
                 //print("json: \(json)")
-                let user:GitHubUser? = Mapper<GitHubUser>().map(JSONObject: json)
+                let user:GitHubUserModel? = Mapper<GitHubUserModel>().map(JSONObject: json)
                 self.user = user
             }
         }
@@ -107,7 +107,7 @@ class MyGitHubLogin {
         Alamofire.request("https://api.github.com/user/repos",method: .get, parameters: params, headers: headers).responseJSON { response in
             if let json:[Any] = response.result.value as?[Any] {
                 for repo in json {
-                    let githubRepo:GitHubRepo? = Mapper<GitHubRepo>().map(JSONObject: repo)
+                    let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: repo)
                 }
             }
         }
