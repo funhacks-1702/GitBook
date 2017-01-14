@@ -11,6 +11,8 @@
 		74271B9B1E2A5085004E4874 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9A1E2A5085004E4874 /* BookModel.swift */; };
 		74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */; };
 		BB80C8E011510492E00B2C68 /* Pods_GitBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA7F33FBCF2A2423C68469F /* Pods_GitBook.framework */; };
+		D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */; };
+		D65A9DCB1E2A1B2E00B4E35F /* BarcodeReaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */; };
 		D6EFB1851E29CAC700396BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1841E29CAC700396BFB /* AppDelegate.swift */; };
 		D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFB1861E29CAC700396BFB /* ViewController.swift */; };
 		D6EFB18A1E29CAC700396BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EFB1881E29CAC700396BFB /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		74271B9A1E2A5085004E4874 /* BookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfModel.swift; sourceTree = "<group>"; };
 		A3E59A4A57A37EC4EB34E5FC /* Pods-GitBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitBook/Pods-GitBook.release.xcconfig"; sourceTree = "<group>"; };
+		D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReaderView.swift; sourceTree = "<group>"; };
+		D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarcodeReaderView.xib; sourceTree = "<group>"; };
 		D6EFB1811E29CAC700396BFB /* GitBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EFB1841E29CAC700396BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EFB1861E29CAC700396BFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				F7D80FC81E2A29B500AE11D8 /* GitHubUser.swift */,
 				F7D80FC91E2A29B500AE11D8 /* MyGitHubLogin.swift */,
 				D6EFB1881E29CAC700396BFB /* Main.storyboard */,
+				D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */,
+				D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */,
 				D6EFB18B1E29CAC700396BFB /* Assets.xcassets */,
 				D6EFB18D1E29CAC700396BFB /* LaunchScreen.storyboard */,
 				D6EFB1901E29CAC700396BFB /* Info.plist */,
@@ -171,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65A9DCB1E2A1B2E00B4E35F /* BarcodeReaderView.xib in Resources */,
 				D6EFB18F1E29CAC700396BFB /* LaunchScreen.storyboard in Resources */,
 				D6EFB18C1E29CAC700396BFB /* Assets.xcassets in Resources */,
 				D6EFB18A1E29CAC700396BFB /* Main.storyboard in Resources */,
@@ -235,6 +242,7 @@
 				74271B9B1E2A5085004E4874 /* BookModel.swift in Sources */,
 				F7D80FCC1E2A29B500AE11D8 /* MyGitHubLogin.swift in Sources */,
 				74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */,
+				D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */,
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				F7D80FCB1E2A29B500AE11D8 /* GitHubUser.swift in Sources */,
 				F7D80FCA1E2A29B500AE11D8 /* GitHubRepo.swift in Sources */,
