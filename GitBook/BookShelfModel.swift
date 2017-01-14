@@ -20,10 +20,10 @@ class BookShelfModel: Mappable{
     }
     
     func mapping(map: Map) {
-        ShelfId <- map["ShelfId"]
-        ShelfName <- map["ShelfName"]
-        ShelfOwner <- map["ShelfOwner"]
-        CreatedAt <- map["CreatedAt"]
-        ShelfBooks <- map["ShelfBooks"]
+        shelf_id <- map["shelf_id"]
+        shelf_name <- map["shelf_name"]
+        shelf_owner <- map["shelf_owner"]
+        created_at <- map["created_at"]
+        shelf_books <- map["shelf_books"]
     }
 }
