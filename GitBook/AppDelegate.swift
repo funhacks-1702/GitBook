@@ -12,12 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let creamRedColor = UIColor(red: 227/255, green: 134/255, blue: 131/255, alpha: 0.5)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //アクセストークン確認(トークンがなければ取得)
         GitHubConnection.sharedInstance.confirmAccessToken()
+        //ナビゲーションバーの色を変更
+        UINavigationBar.appearance().barTintColor = creamRedColor
+        //ナビゲーションバーの文字色を変更 -> 白
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        //ナビゲーションバーのアイテムの色を変更 -> 白
+        UINavigationBar.appearance().tintColor = UIColor.white
 
         return true
     }
