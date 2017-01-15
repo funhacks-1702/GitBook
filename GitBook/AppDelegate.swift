@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let creamRedColor = UIColor(red: 227/255, green: 134/255, blue: 131/255, alpha: 0.5)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        GitHubConnection.sharedInstance.confirmAccessToken()
         // Override point for customization after application launch.
         //ナビゲーションバーの色を変更
         UINavigationBar.appearance().barTintColor = creamRedColor

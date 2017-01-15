@@ -13,11 +13,6 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //GitHubConnection.sharedInstance.createNewProj(name: "test2")
-        ////アクセストークン確認(トークンがなければ取得)
-        GitHubConnection.sharedInstance.confirmAccessToken()        
-        GitHubConnection.sharedInstance.uploadsFile(file_name: "sample", type: "css", repo_name: "test2-GitBook")
     }
     
     override func didReceiveMemoryWarning() {

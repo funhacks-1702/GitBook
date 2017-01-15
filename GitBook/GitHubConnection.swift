@@ -152,6 +152,7 @@ class GitHubConnection {
         }
         
         guard let bundle = Bundle.main.path(forResource: file_name, ofType: type) else {
+            print("FAILED",file_name)
             return
         }
         
@@ -170,7 +171,7 @@ class GitHubConnection {
         
         
         Alamofire.request("https://api.github.com/repos/\(user.login!)/\(repo_name)/contents/\(file_name).\(type)", method: .put, parameters: params, encoding:JSONEncoding.default , headers: headers).responseJSON{ response in
-            print(response.result.value)
+           // print(response.result.value)
 //            let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: response.result.value)
 //            self.repos?.append(githubRepo!)
         }
