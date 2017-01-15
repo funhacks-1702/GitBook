@@ -198,7 +198,7 @@
         <!--全ての本棚-->
         <scene sceneID="iO3-fu-qhb">
             <objects>
-                <viewController id="rUG-Um-FYD" customClass="BookShelfListViewController" customModule="GitBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rUG-Um-FYD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HqR-3W-Vhh"/>
                         <viewControllerLayoutGuide type="bottom" id="ZSe-YL-bAk"/>
@@ -238,7 +238,7 @@
         <!--本棚の名前-->
         <scene sceneID="FmQ-cg-txf">
             <objects>
-                <viewController id="q0t-jO-sxT" customClass="SearchBookViewController" customModule="GitBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q0t-jO-sxT" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="maR-of-dDY"/>
                         <viewControllerLayoutGuide type="bottom" id="6NL-ji-S0y"/>
@@ -276,12 +276,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="本棚の名前" id="jQp-8w-ygg">
                         <rightBarButtonItems>
-                            <barButtonItem title="SetteingButton" id="lWn-Pk-96j">
+                            <barButtonItem title="Setteing" id="lWn-Pk-96j">
                                 <connections>
                                     <segue destination="5oz-fH-02p" kind="push" id="gqe-tH-7hy"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="GitButton" id="u5B-a5-lWh"/>
+                            <barButtonItem title="Git" id="u5B-a5-lWh"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -332,7 +332,7 @@
             </objects>
             <point key="canvasLocation" x="1964" y="2476.9115442278862"/>
         </scene>
-        <!--本検索-->
+        <!--Search Book View Controller-->
         <scene sceneID="tTo-ch-KRb">
             <objects>
                 <viewController id="7O5-df-7oo" customClass="SearchBookViewController" customModule="GitBook" customModuleProvider="target" sceneMemberID="viewController">
@@ -367,7 +367,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="本検索" id="MUY-Wf-jWd"/>
+                    <navigationItem key="navigationItem" id="MUY-Wf-jWd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAf-nx-N30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
