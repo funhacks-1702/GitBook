@@ -67,6 +67,37 @@ self.check_btn.setImage(UIImage(named:"btn_post_photo_check_off"), for: .normal)
     }
     @IBAction func addBookShelf(_ sender: Any) {
         if(publish_flg){
+            if let user = GitHubConnection.sharedInstance.user {
+                if let accessToken = GitHubConnection.sharedInstance.accessToken {
+                    // タイトル, メッセージ, Alertのスタイルを指定する
+                    // 第3引数のpreferredStyleでアラートの表示スタイルを指定する
+                    let alert: UIAlertController = UIAlertController(title: "GitHubのアカウントを作成", message: "本棚の公開機能を利用するには、GitHubのアカウントが必要です。アカウントをお持ちでない場合はmいかの「アカウント登録」ボタンより、GitHubアカウントを作成してください。", preferredStyle:  UIAlertControllerStyle.alert)
+                    
+                    // ② Actionの設定
+                    // Action初期化時にタイトル, スタイル, 押された時に実行されるハンドラを指定する
+                    // 第3引数のUIAlertActionStyleでボタンのスタイルを指定する
+                    // OKボタン
+                    let defaultAction: UIAlertAction = UIAlertAction(title: "アカウント作成", style: UIAlertActionStyle.default, handler:{
+                        // ボタンが押された時の処理を書く（クロージャ実装）
+                        (action: UIAlertAction!) -> Void in
+                        print("OK")
+                    })
+                    // キャンセルボタン
+                    let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertActionStyle.cancel, handler:{
+                        // ボタンが押された時の処理を書く（クロージャ実装）
+                        (action: UIAlertAction!) -> Void in
+                        print("Cancel")
+                    })
+                    
+                    // ③ UIAlertControllerにActionを追加
+                    alert.addAction(cancelAction)
+                    alert.addAction(defaultAction)
+                    
+                    // ④ Alertを表示
+                    present(alert, animated: true, completion: nil)
+                }
+            }
+            
             let repo_name = "\(shelf_name)-GitBook"
             
             GitHubConnection.sharedInstance.createNewProj(name: shelf_name, callback: {
@@ -78,11 +109,22 @@ self.check_btn.setImage(UIImage(named:"btn_post_photo_check_off"), for: .normal)
             bookShelf.shelf_name = shelf_name
             bookShelf.repository = repo_name
             bookShelf.created_at = Date() as NSDate?
+            ShelfManager.sharedInstance.shelves?.append(bookShelf)
             
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "AllBookShelvesViewController")
+            self.navigationController?.pushViewController(controller, animated: true)
+
         }else{
             let bookShelf = BookShelfModel()
             bookShelf.shelf_name = shelf_name
             bookShelf.created_at = Date() as NSDate?
+            ShelfManager.sharedInstance.shelves?.append(bookShelf)
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "AllBookShelvesViewController")
+            self.navigationController?.pushViewController(controller, animated: true)
+
         }
     }
 

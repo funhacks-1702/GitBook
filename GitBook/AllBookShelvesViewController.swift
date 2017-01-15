@@ -9,6 +9,13 @@
 import UIKit
 
 class AllBookShelvesViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -244,7 +244,7 @@
         <!--全ての本棚-->
         <scene sceneID="iO3-fu-qhb">
             <objects>
-                <viewController id="rUG-Um-FYD" customClass="AllBookShelvesViewController" customModule="GitBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllBookShelvesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rUG-Um-FYD" customClass="AllBookShelvesViewController" customModule="GitBook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HqR-3W-Vhh"/>
                         <viewControllerLayoutGuide type="bottom" id="ZSe-YL-bAk"/>
@@ -275,11 +275,11 @@
                     <navigationItem key="navigationItem" title="全ての本棚" id="6X7-VN-pvA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DoQ-as-bNz"/>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1i-aZ-EdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="2035"/>
+            <point key="canvasLocation" x="1297" y="1740"/>
         </scene>
         <!--本棚の名前-->
         <scene sceneID="FmQ-cg-txf">

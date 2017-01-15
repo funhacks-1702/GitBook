@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import RealmSwift
+import ObjectMapper
 // 本棚のモデルクラス
-class BookShelfModel: Object{
+class BookShelfModel{
     var shelf_id: Int?
     var shelf_name: String?
     var shelf_owner: String?
