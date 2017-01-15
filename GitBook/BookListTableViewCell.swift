@@ -18,8 +18,8 @@ class BookListTableViewCell: UITableViewCell {
     func setCell(model: BookModel){
         bookImage.sd_setImage(with: NSURL(string: model.book_image_url!) as URL?)
         bookName.text = model.book_name
-        if model.author != nil{
-            bookAuthor.text = model.author?[0]
+        if model.authors != nil{
+            bookAuthor.text = model.authors?[0]
         }
     }
     
