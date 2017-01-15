@@ -25,6 +25,7 @@
 		F71AE0D61E2AAF8C002779E7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71AE0D51E2AAF8C002779E7 /* WelcomeViewController.swift */; };
 		F71AE0E31E2AB2DE002779E7 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71AE0E11E2AB2DE002779E7 /* BookListTableViewCell.swift */; };
 		F71AE0E41E2AB2DE002779E7 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71AE0E21E2AB2DE002779E7 /* BookListViewController.swift */; };
+		F71AE1251E2AEBA2002779E7 /* BookListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71AE1241E2AEBA2002779E7 /* BookListTableViewCell.xib */; };
 		F7D80FCA1E2A29B500AE11D8 /* GitHubRepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80FC71E2A29B500AE11D8 /* GitHubRepoModel.swift */; };
 		F7D80FCB1E2A29B500AE11D8 /* GitHubUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80FC81E2A29B500AE11D8 /* GitHubUserModel.swift */; };
 		F7D80FCE1E2A308300AE11D8 /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80FCD1E2A308300AE11D8 /* RequestParameters.swift */; };
@@ -53,6 +54,7 @@
 		F71AE0D51E2AAF8C002779E7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F71AE0E11E2AB2DE002779E7 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
 		F71AE0E21E2AB2DE002779E7 /* BookListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		F71AE1241E2AEBA2002779E7 /* BookListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookListTableViewCell.xib; sourceTree = "<group>"; };
 		F7D80FC71E2A29B500AE11D8 /* GitHubRepoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRepoModel.swift; sourceTree = "<group>"; };
 		F7D80FC81E2A29B500AE11D8 /* GitHubUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserModel.swift; sourceTree = "<group>"; };
 		F7D80FCD1E2A308300AE11D8 /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
@@ -131,7 +133,7 @@
 				D6D5B01F1E2A6BB400CB484B /* BookShelfStorage.swift */,
 				F71AE0E11E2AB2DE002779E7 /* BookListTableViewCell.swift */,
 				F71AE0E21E2AB2DE002779E7 /* BookListViewController.swift */,
-				741900331E2AC2A5009CBDAE /* BookShelfListViewController.swift */,
+				F71AE1241E2AEBA2002779E7 /* BookListTableViewCell.xib */,
 			);
 			path = GitBook;
 			sourceTree = "<group>";
@@ -202,6 +204,7 @@
 				D6EFB18F1E29CAC700396BFB /* LaunchScreen.storyboard in Resources */,
 				D6EFB18C1E29CAC700396BFB /* Assets.xcassets in Resources */,
 				D6EFB18A1E29CAC700396BFB /* Main.storyboard in Resources */,
+				F71AE1251E2AEBA2002779E7 /* BookListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
