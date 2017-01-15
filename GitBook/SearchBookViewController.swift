@@ -1,5 +1,5 @@
 //
-//  BookListViewController.swift
+//  SearchBookViewController.swift
 //  GitBook
 //
 //  Created by 佐藤秀輔 on 2017/01/14.
@@ -10,7 +10,7 @@ import UIKit
 import Kanna
 import SDWebImage
 
-class BookListViewController: UIViewController{
+class SearchBookViewController: UIViewController{
     
     var books: [BookModel]?
     
@@ -62,7 +62,7 @@ class BookListViewController: UIViewController{
                             break
                         }
                     }
-                    let book: BookModel? = BookModel(value: ["book_name":book_name,"book_url":book_url,"book_image_url":book_image_url,"author":author])
+                    let book: BookModel? = BookModel(value: ["book_name":book_name,"book_url":book_url,"book_image_url":book_image_url,"authors":author])
 
                     self.books?.append(book!)
                 }
