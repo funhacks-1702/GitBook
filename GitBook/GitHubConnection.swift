@@ -16,6 +16,7 @@ class GitHubConnection {
     let clientSecret = "b1ea6a00f2bb9e4f3a0ff38d0a3aa476efa992ee"
     var accessToken: String!
     var user: GitHubUserModel!
+    var repos: [GitHubRepoModel]?
     
     static let sharedInstance = GitHubConnection()
     init() {
@@ -28,11 +29,12 @@ class GitHubConnection {
         //AccessTokenが存在しない時
         guard let accessToken = self.accessToken else{
             let clientId = self.clientId
-            let url = URL(string:"https://github.com/login/oauth/authorize?client_id=\(clientId)")
+            let url = URL(string:"https://github.com/login/oauth/authorize?client_id=\(clientId)&scope=repo")
             // Safari が開く場合
             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
             return
         }
+        print("accessToken",accessToken)
         getUserData()
     }
     /// ユーザデータ取得
@@ -108,6 +110,7 @@ class GitHubConnection {
             if let json:[Any] = response.result.value as?[Any] {
                 for repo in json {
                     let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: repo)
+                    print(githubRepo?.name)
                 }
             }
         }
@@ -122,20 +125,16 @@ class GitHubConnection {
         
         
         let headers: HTTPHeaders = [
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Authorization": "token \(self.accessToken!)"
         ]
         let params: Parameters = [
-            "name" : name,
-            "access_token" : accessToken
+            "name" : "\(name)-GitBook",
+            "description": "This is your first repository",
         ]
-        
-        Alamofire.request("https://api.github.com/user/repos",method: .post, parameters: params, headers: headers).responseJSON { response in
-            if let json:[Any] = response.result.value as?[Any] {
-                for repo in json {
-                    let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: repo)
-                }
-            }
+        Alamofire.request("https://api.github.com/user/repos", method: .post, parameters: params, encoding:JSONEncoding.default , headers: headers).responseJSON{ response in
+            let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: response.result.value)
+            self.repos?.append(githubRepo!)
         }
-
     }
 }
