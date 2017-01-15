@@ -16,5 +16,5 @@ class BookModel: Object{
     var book_image_url: String?
     var author: String = ""
     var comment: String?
-    var tag: [String]?
+//    var tag: [String]?
 }
