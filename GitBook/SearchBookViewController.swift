@@ -45,7 +45,7 @@ class SearchBookViewController: UIViewController{
                     var book_name:String? = ""
                     var book_url:String? = ""
                     var book_image_url:String? = ""
-                    var author:[String]? = []
+                    var author:String? = ""
                     
                     for bookName in contentsList.css("a.a-link-normal.s-access-detail-page.a-text-normal"){                        book_name = bookName["title"]!
                         book_url = bookName["href"]!
@@ -54,15 +54,13 @@ class SearchBookViewController: UIViewController{
                         book_image_url = bookImageURL["src"]
                     }
                     for bookAuthor in contentsList.css("div.a-row.a-spacing-mini div.a-row.a-spacing-none span.a-size-small.a-color-secondary a.a-link-normal.a-text-normal"){
-                        author?.append(bookAuthor.innerHTML!)
-                    }
-                    for i in 0 ..< author!.count{
-                        if (author?[i] == "詳細を見る") {
-                            author?.remove(at: i)
+                        if (bookAuthor.innerHTML != "詳細を見る") {
+                            author = bookAuthor.innerHTML
                             break
                         }
                     }
-                    let book: BookModel? = BookModel(value: ["book_name":book_name,"book_url":book_url,"book_image_url":book_image_url,"authors":author])
+                    
+                    let book: BookModel? = BookModel(value: ["book_name":book_name,"book_url":book_url,"book_image_url":book_image_url,"author":author])
 
                     self.books?.append(book!)
                 }
