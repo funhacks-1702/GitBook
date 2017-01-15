@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741900341E2AC2A5009CBDAE /* BookShelfListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741900331E2AC2A5009CBDAE /* BookShelfListViewController.swift */; };
 		74271B961E2A2233004E4874 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74271B951E2A2233004E4874 /* libxml2.tbd */; };
 		74271B9B1E2A5085004E4874 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9A1E2A5085004E4874 /* BookModel.swift */; };
 		74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		5617A0B202016AE722C6E441 /* Pods-GitBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitBook/Pods-GitBook.debug.xcconfig"; sourceTree = "<group>"; };
+		741900331E2AC2A5009CBDAE /* BookShelfListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookShelfListViewController.swift; sourceTree = "<group>"; };
 		74271B951E2A2233004E4874 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		74271B9A1E2A5085004E4874 /* BookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */,
 				D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */,
 				F71AE0D61E2AAF8C002779E7 /* WelcomeViewController.swift in Sources */,
+				741900341E2AC2A5009CBDAE /* BookShelfListViewController.swift in Sources */,
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				F7D80FCB1E2A29B500AE11D8 /* GitHubUserModel.swift in Sources */,
 				D6D5B0201E2A6BB400CB484B /* BookShelfStorage.swift in Sources */,
