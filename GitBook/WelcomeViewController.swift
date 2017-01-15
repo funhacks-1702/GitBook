@@ -14,7 +14,8 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        GitHubConnection.sharedInstance.createNewProj(name: "test")
+        //GitHubConnection.sharedInstance.createNewProj(name: "test2")
+        GitHubConnection.sharedInstance.uploadsFile(file_name: "sample", type: "css", repo_name: "test2-GitBook")
     }
 /// ナビゲーションバー有効にする
 //    override func viewDidAppear(_ animated: Bool) {

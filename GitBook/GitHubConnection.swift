@@ -9,6 +9,9 @@
 import Foundation
 import Alamofire
 import ObjectMapper
+// リポジトリ作成
+// GitHubConnection.sharedInstance.createNewProj(name: "test")
+
 
 class GitHubConnection {
     var code: String!
@@ -131,10 +134,46 @@ class GitHubConnection {
         let params: Parameters = [
             "name" : "\(name)-GitBook",
             "description": "This is your first repository",
+            "has_pages":true,
+            "auto_init":true
         ]
         Alamofire.request("https://api.github.com/user/repos", method: .post, parameters: params, encoding:JSONEncoding.default , headers: headers).responseJSON{ response in
+            print(response.result.value)
             let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: response.result.value)
             self.repos?.append(githubRepo!)
         }
+    }
+    func uploadsFile(file_name:String,type:String,repo_name:String){
+        guard let accessToken = self.accessToken else{
+            return
+        }
+        guard let user = self.user else{
+            return
+        }
+        
+        guard let bundle = Bundle.main.path(forResource: file_name, ofType: type) else {
+            return
+        }
+        
+        let content = try! String(contentsOfFile: bundle, encoding: String.Encoding.utf8)
+        let base64Encoded = Data(content.utf8).base64EncodedString()
+
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "Authorization": "token \(accessToken)"
+        ]
+        let params: Parameters = [
+            "message" : "[update] \(file_name).\(type)",
+            "content": base64Encoded
+        ]
+        
+        
+        Alamofire.request("https://api.github.com/repos/\(user.login!)/\(repo_name)/contents/\(file_name).\(type)", method: .put, parameters: params, encoding:JSONEncoding.default , headers: headers).responseJSON{ response in
+            print(response.result.value)
+//            let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: response.result.value)
+//            self.repos?.append(githubRepo!)
+        }
+
     }
 }
