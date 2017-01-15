@@ -62,7 +62,7 @@ class BookListViewController: UIViewController{
                             break
                         }
                     }
-                    let book: BookModel? = BookModel(JSON: ["book_name":book_name,"book_url":book_url,"book_image_url":book_image_url,"author":author])
+                    let book: BookModel? = BookModel(value: ["book_name":book_name,"book_url":book_url,"book_image_url":book_image_url,"author":author])
 
                     self.books?.append(book!)
                 }
