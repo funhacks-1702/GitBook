@@ -120,8 +120,7 @@ class GitHubConnection {
         
     }
     //リポジトリ作成
-    func createNewProj(name:String)
-    {
+    func createNewProj(name:String, callback: @escaping () -> Void) -> Void {
         guard let accessToken = self.accessToken else{
             return
         }
@@ -141,6 +140,7 @@ class GitHubConnection {
             print(response.result.value)
             let githubRepo:GitHubRepoModel? = Mapper<GitHubRepoModel>().map(JSONObject: response.result.value)
             self.repos?.append(githubRepo!)
+            callback()
         }
     }
     func uploadsFile(file_name:String,type:String,repo_name:String){

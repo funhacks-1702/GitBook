@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //アクセストークン確認(トークンがなければ取得)
-        GitHubConnection.sharedInstance.confirmAccessToken()
         //ナビゲーションバーの色を変更
         UINavigationBar.appearance().barTintColor = creamRedColor
         //ナビゲーションバーの文字色を変更 -> 白

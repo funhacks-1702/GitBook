@@ -13,6 +13,7 @@ class BookShelfModel: Object{
     var shelf_id: Int?
     var shelf_name: String?
     var shelf_owner: String?
+    var repository: String?
     var created_at: NSDate?
     var is_private: Bool?
     var shelf_books: [BookModel]?
