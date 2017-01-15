@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>GitBook</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="jquery-loadTemplate.min.js"></script>
+  <script src="main.js"></script>
+  <link rel = "stylesheet" href = "main.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- BootstrapのCSS読み込み 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  BootstrapのJS読み込み 
+  <script src="js/bootstrap.min.js"></script> -->
+</head>
+<body>
+    <div id="modal-main" class="container">
+      <div class="row">
+        <img src="#" id="modal-book-img" class="col-xs-5"> <!-- class="col-xs-5"> -->
+        <div class="col-xs-7" id="cont-modal-text">
+          <div id="modal-book-name"></div>
+          <div id="modal-isbn"></div>
+          <div id="modal-comment"></div>
+          <div id="modal-tags"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="eyecatch">
+      <div id="eyecatch-text-container">
+        <span id="shelf_name">@@ の本棚</span>
+        <span id="shelf_owner">created by @@</span>
+      </div>
+    </div>
+
+
+    <div id="cont-container-bookshelves">
+      <div id="container-bookshelves" class="container">
+        <div id="bookshelves" class="row">
+        </div>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <a href="#menu-shelves" id="shelf-selector" class="list-group-item" data-toggle="collapse" data-target="#menu-shelves" data-parent="#sidebar"><span class="glyphicon glyphicon-list"></span> Bookshelves</a>
+
+      <div id="menu-shelves" class="sublinks collapse">
+      </div>
+    </div>
+</body>
+</html>

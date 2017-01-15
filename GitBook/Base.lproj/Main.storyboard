@@ -72,6 +72,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zul-ts-6de">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94117647059999998" green="0.49803921569999998" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -122,7 +123,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FirstShelf-Btn"/>
                                 <connections>
-                                    <segue destination="rUG-Um-FYD" kind="show" id="Qsj-rN-55s"/>
+                                    <segue destination="vZL-cV-qTY" kind="push" id="MVs-iB-t7o"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Books-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="44b-QO-ZeR">
@@ -167,10 +168,83 @@
             </objects>
             <point key="canvasLocation" x="1076" y="965"/>
         </scene>
+        <!--本棚作成-->
+        <scene sceneID="E7W-YX-0RA">
+            <objects>
+                <viewController id="vZL-cV-qTY" customClass="CreateShelfViewController" customModule="GitBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8YQ-I9-qKd"/>
+                        <viewControllerLayoutGuide type="bottom" id="c2h-BC-TCj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IMZ-bj-8bU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Books-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="DuY-DG-VyR">
+                                <rect key="frame" x="39" y="65" width="77" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="本棚の名前" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eDA-G1-yeX">
+                                <rect key="frame" x="39" y="141" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textEditing:" destination="vZL-cV-qTY" eventType="editingDidEnd" id="mDF-6U-ob6"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本棚を公開する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-ya-HH9">
+                                <rect key="frame" x="39" y="235" width="217" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMd-Gf-eo3">
+                                <rect key="frame" x="3" y="575" width="368" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="CreateShelf-Btn"/>
+                                <connections>
+                                    <action selector="addBookShelf:" destination="vZL-cV-qTY" eventType="touchUpInside" id="lvA-DJ-tb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-f1-v2g">
+                                <rect key="frame" x="24" y="303" width="327" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ConnectGitHub-Btn"/>
+                                <connections>
+                                    <action selector="connectGitHub:" destination="vZL-cV-qTY" eventType="touchUpInside" id="Nxx-La-koG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okD-iw-nL5">
+                                <rect key="frame" x="322" y="232" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn_post_photo_check_off">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkBtnClicked:" destination="vZL-cV-qTY" eventType="touchUpInside" id="PkJ-Fb-8I3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.49803921569999998" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="本棚作成" id="O9J-lo-Waa"/>
+                    <connections>
+                        <outlet property="check_btn" destination="okD-iw-nL5" id="Hl8-vC-pbO"/>
+                        <outlet property="connectGitHub" destination="oqf-f1-v2g" id="wIz-0g-4Gh"/>
+                        <outlet property="textField" destination="eDA-G1-yeX" id="zWS-c0-RY3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjn-LG-TkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="1647.5262368815593"/>
+        </scene>
         <!--全ての本棚-->
         <scene sceneID="iO3-fu-qhb">
             <objects>
-                <viewController id="rUG-Um-FYD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllBookShelvesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rUG-Um-FYD" customClass="AllBookShelvesViewController" customModule="GitBook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HqR-3W-Vhh"/>
                         <viewControllerLayoutGuide type="bottom" id="ZSe-YL-bAk"/>
@@ -201,11 +275,11 @@
                     <navigationItem key="navigationItem" title="全ての本棚" id="6X7-VN-pvA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DoQ-as-bNz"/>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1i-aZ-EdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="1695.2023988005999"/>
+            <point key="canvasLocation" x="1297" y="1740"/>
         </scene>
         <!--本棚の名前-->
         <scene sceneID="FmQ-cg-txf">
@@ -522,6 +596,8 @@
         <image name="Book-Icon" width="256" height="256"/>
         <image name="Books-Icon" width="256" height="256"/>
         <image name="CommitSetting-Btn" width="314" height="72"/>
+        <image name="ConnectGitHub-Btn" width="273" height="60"/>
+        <image name="CreateShelf-Btn" width="314" height="72"/>
         <image name="FirstShelf-Btn" width="314" height="72"/>
         <image name="FirstTime-Btn" width="314" height="72"/>
         <image name="Git-Icon-Pink" width="383" height="383"/>
@@ -532,5 +608,6 @@
         <image name="RemoveBook-Btn" width="314" height="72"/>
         <image name="RemoveShelf-Btn" width="314" height="72"/>
         <image name="WallPaper" width="744" height="1392"/>
+        <image name="btn_post_photo_check_off" width="37" height="37"/>
     </resources>
 </document>

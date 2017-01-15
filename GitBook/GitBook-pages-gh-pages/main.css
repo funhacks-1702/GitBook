@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+body {
+  font-family: cursive;
+  margin : 0px;
+  background-image: url("mokume3-mini.jpg");
+  background-repeat: repeat;
+}
+
+.list-group-item {
+  opacity: 0.93;
+  width: 35vw;
+  margin-left: auto;
+}
+
+#eyecatch{
+  position: absolute;
+  font-family: cursive;
+  color: white;
+  background-color: lightcoral;
+  width: 100vw;
+  height: 20vh;
+  top: 10vh;
+  left: 0;
+  border-width: 2px;
+  border-color: aliceblue;
+  border-bottom-style: solid;
+}
+
+#eyecatch-text-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+#eyecatch #shelf_name {
+  font-size : 30px;
+  height: 5vh;
+  padding-top: 10vh;
+  padding-left : 30%;
+}
+
+#eyecatch #shelf_owner {
+  font-size : 20px;
+  height: 3vh;
+  padding-left: 60%;
+  padding-bottom: 10vh;
+}
+
+#sidebar {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: rosybrown;
+}
+
+
+#bookshelves {
+  position: absolute;
+  width: 100vw;
+  margin: 0 auto;
+  top: 35vh;
+  background-color: transparent;
+}
+
+.book-img {
+  height: 20vh;
+}
+
+.book-img:hover {
+  transform: rotateY(0deg);
+}
+
+#container-bookshelves {
+  width: 100vw;
+  background-color: transparent;
+}
+
+#cont-container-bookshelves {
+  width: 100vw;
+  /* background-color: lavenderblush; */
+  background-image: url("mokume3.jpg");
+  background-repeat: repeat;
+}
+
+.col-book {
+  padding-bottom: 3%;
+  transform-origin: center bottom;
+  transition: all 0.2s ease 0s;
+  transform: matrix3d(1,0,0.00,0,0.00,0.98,0.17,-0.0004,0,-0.17,0.98,0,0,0,0,1);
+}
+
+.col-book:hover {
+  transform: matrix3d(1,0,0.00,0,0.00,1,0,0,0,-0.17,0.98,0,0,0,0,1);
+}
+
+/* モーダルウィンドウ関連 */
+/* モーダル コンテンツエリア */
+#modal-main {
+  display: none;
+  width: 70vw;
+  height: 50vh;
+  margin: 0;
+  padding: 10px;
+  background-color: #EEE;
+  color: #555;
+  position:fixed;
+  z-index: 30;
+  border-radius: 8px;
+}
+/* モーダル 背景エリア */
+#modal-bg {
+  display:none;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.55);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 20;
+}
+
+#modal-book-name {
+  font-size: 16px;
+}
+
+#modal-isbn {
+  font-size: 8px;
+}
+
+#cont-modal-text > div {
+  margin: 5px 0;
+}
+
+.col-book-content {
+  pointer-events: none;
+}

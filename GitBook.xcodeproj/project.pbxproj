@@ -25,8 +25,9 @@
 		F71AE0E31E2AB2DE002779E7 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71AE0E11E2AB2DE002779E7 /* BookListTableViewCell.swift */; };
 		F71AE0E41E2AB2DE002779E7 /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71AE0E21E2AB2DE002779E7 /* SearchBookViewController.swift */; };
 		F71AE1251E2AEBA2002779E7 /* BookListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71AE1241E2AEBA2002779E7 /* BookListTableViewCell.xib */; };
-		F77FF0AF1E2B1F960087CA2B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F77FF0AE1E2B1F960087CA2B /* index.html */; };
-		F77FF0B11E2B263B0087CA2B /* sample.css in Resources */ = {isa = PBXBuildFile; fileRef = F77FF0B01E2B263B0087CA2B /* sample.css */; };
+		F77FF0B31E2B2B740087CA2B /* CreateShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77FF0B21E2B2B740087CA2B /* CreateShelfViewController.swift */; };
+		F77FF0B51E2B30B90087CA2B /* AllBookShelvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77FF0B41E2B30B90087CA2B /* AllBookShelvesViewController.swift */; };
+		F77FF1261E2B421C0087CA2B /* GitBook-pages-gh-pages in Resources */ = {isa = PBXBuildFile; fileRef = F77FF1251E2B421C0087CA2B /* GitBook-pages-gh-pages */; };
 		F7D80FCA1E2A29B500AE11D8 /* GitHubRepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80FC71E2A29B500AE11D8 /* GitHubRepoModel.swift */; };
 		F7D80FCB1E2A29B500AE11D8 /* GitHubUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80FC81E2A29B500AE11D8 /* GitHubUserModel.swift */; };
 		F7D80FCE1E2A308300AE11D8 /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D80FCD1E2A308300AE11D8 /* RequestParameters.swift */; };
@@ -55,8 +56,9 @@
 		F71AE0E11E2AB2DE002779E7 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
 		F71AE0E21E2AB2DE002779E7 /* SearchBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
 		F71AE1241E2AEBA2002779E7 /* BookListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookListTableViewCell.xib; sourceTree = "<group>"; };
-		F77FF0AE1E2B1F960087CA2B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		F77FF0B01E2B263B0087CA2B /* sample.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = sample.css; sourceTree = "<group>"; };
+		F77FF0B21E2B2B740087CA2B /* CreateShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateShelfViewController.swift; sourceTree = "<group>"; };
+		F77FF0B41E2B30B90087CA2B /* AllBookShelvesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllBookShelvesViewController.swift; sourceTree = "<group>"; };
+		F77FF1251E2B421C0087CA2B /* GitBook-pages-gh-pages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "GitBook-pages-gh-pages"; sourceTree = "<group>"; };
 		F7D80FC71E2A29B500AE11D8 /* GitHubRepoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRepoModel.swift; sourceTree = "<group>"; };
 		F7D80FC81E2A29B500AE11D8 /* GitHubUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubUserModel.swift; sourceTree = "<group>"; };
 		F7D80FCD1E2A308300AE11D8 /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
@@ -122,22 +124,23 @@
 				F7D80FC81E2A29B500AE11D8 /* GitHubUserModel.swift */,
 				F71AE0D11E2A9A1E002779E7 /* GitHubConnection.swift */,
 				F7D80FCD1E2A308300AE11D8 /* RequestParameters.swift */,
-				D6D5B0231E2A9FA600CB484B /* ShelfManager.swift */,
 				D6EFB1881E29CAC700396BFB /* Main.storyboard */,
+				F77FF0B41E2B30B90087CA2B /* AllBookShelvesViewController.swift */,
+				F77FF0B21E2B2B740087CA2B /* CreateShelfViewController.swift */,
 				D65A9DC81E2A1B2100B4E35F /* BarcodeReaderView.swift */,
 				D65A9DCA1E2A1B2E00B4E35F /* BarcodeReaderView.xib */,
 				D6EFB18B1E29CAC700396BFB /* Assets.xcassets */,
 				D6EFB18D1E29CAC700396BFB /* LaunchScreen.storyboard */,
 				D6EFB1901E29CAC700396BFB /* Info.plist */,
+				F77FF1251E2B421C0087CA2B /* GitBook-pages-gh-pages */,
 				74271B971E2A22F3004E4874 /* GitBook-Bridging-Header.h */,
 				74271B9A1E2A5085004E4874 /* BookModel.swift */,
+				D6D5B0231E2A9FA600CB484B /* ShelfManager.swift */,
 				74271B9C1E2A55C5004E4874 /* BookShelfModel.swift */,
 				D6D5B01F1E2A6BB400CB484B /* BookShelfStorage.swift */,
 				F71AE0E11E2AB2DE002779E7 /* BookListTableViewCell.swift */,
 				F71AE0E21E2AB2DE002779E7 /* SearchBookViewController.swift */,
 				F71AE1241E2AEBA2002779E7 /* BookListTableViewCell.xib */,
-				F77FF0B01E2B263B0087CA2B /* sample.css */,
-				F77FF0AE1E2B1F960087CA2B /* index.html */,
 			);
 			path = GitBook;
 			sourceTree = "<group>";
@@ -206,9 +209,8 @@
 			files = (
 				D65A9DCB1E2A1B2E00B4E35F /* BarcodeReaderView.xib in Resources */,
 				D6EFB18F1E29CAC700396BFB /* LaunchScreen.storyboard in Resources */,
-				F77FF0B11E2B263B0087CA2B /* sample.css in Resources */,
 				D6EFB18C1E29CAC700396BFB /* Assets.xcassets in Resources */,
-				F77FF0AF1E2B1F960087CA2B /* index.html in Resources */,
+				F77FF1261E2B421C0087CA2B /* GitBook-pages-gh-pages in Resources */,
 				D6EFB18A1E29CAC700396BFB /* Main.storyboard in Resources */,
 				F71AE1251E2AEBA2002779E7 /* BookListTableViewCell.xib in Resources */,
 			);
@@ -271,8 +273,10 @@
 			files = (
 				74271B9B1E2A5085004E4874 /* BookModel.swift in Sources */,
 				F71AE0E31E2AB2DE002779E7 /* BookListTableViewCell.swift in Sources */,
+				F77FF0B51E2B30B90087CA2B /* AllBookShelvesViewController.swift in Sources */,
 				74271B9D1E2A55C5004E4874 /* BookShelfModel.swift in Sources */,
 				D65A9DC91E2A1B2100B4E35F /* BarcodeReaderView.swift in Sources */,
+				F77FF0B31E2B2B740087CA2B /* CreateShelfViewController.swift in Sources */,
 				F71AE0D61E2AAF8C002779E7 /* WelcomeViewController.swift in Sources */,
 				D6EFB1871E29CAC700396BFB /* ViewController.swift in Sources */,
 				F7D80FCB1E2A29B500AE11D8 /* GitHubUserModel.swift in Sources */,

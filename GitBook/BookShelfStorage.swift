@@ -6,9 +6,9 @@
 //  Copyright © 2017年 funhacks-1702. All rights reserved.
 //
 
-import RealmSwift
+import ObjectMapper
 
-class BookShelf: Object{
+class BookShelf {
     var shelf_id = 0
     var shelf_name = ""
     var shelf_owner = ""
